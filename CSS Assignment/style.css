@@ -1,0 +1,37 @@
+body{
+    background-color:tomato;
+}
+h1{
+    color: rgb(255, 238, 0);
+    text-align: center;
+    opacity: 0.5;
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+p:hover{
+    color: white;
+}
+
+.link:hover{
+    /* text-decoration: underline; */
+    opacity: 1;
+}
+
+.link{
+    text-decoration: none;
+    color:rgb(22, 255, 224);
+    opacity: 0.5;
+}
+
+p::before{
+    content: "Note: ";
+    font-weight: bold;
+}
+
+p::after{
+    content:" Thankyou...";
+    font-weight: bold;
+}

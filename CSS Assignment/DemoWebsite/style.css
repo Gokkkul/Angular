@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dadada;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  li a:hover {
+   text-decoration: underline; 
+  }
+
+  .active{
+    text-decoration: underline;
+  }
+
+  h2{
+    text-align: center;
+    margin: 25px;
+  }
+
+  .footer{
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0px;
+    margin: auto;
+    width: 100%;
+    
+  }

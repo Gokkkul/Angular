@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="date">Enter date - </label>
+    <input type="text" id="date" placeholder="DD-MM-YYYY">
+    <button onclick="validate()">Validate</button>
+    <script>
+        function validate() 
+        {
+            let date = document.getElementById('date').value;
+            // console.log(date);
+            const splitDate = date.split("-");
+            let day = parseInt(splitDate[0]);
+            // console.log(day);
+            let month = parseInt(splitDate[1]);
+            let year = parseInt(splitDate[2]);
+            
+            if(month === 2){
+                if (year % 4 === 0) {
+                    if (day < 30) {
+                        alert("Valid Date...!"); 
+                    }
+                    else{
+                        alert("Invalid Date...!")
+                    }
+                }
+                else{
+                    if(day < 29){
+                        alert("Valid Date...!");
+                    }
+                    else{
+                        alert("Invalid Date...!");
+                    }
+                }
+                    
+                }
+                
+            
+
+            else if(month === 4 || month === 6 || month === 9 || month === 11){
+                if(day < 31){
+                    alert("Valid Date...!")
+                }else{
+                    alert("Invalid Date...!")
+                }
+            }
+            else if(month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12){
+                if(day < 32){
+                    alert("Valid Date...!")
+                }else{
+                    alert("Invalid Date...!")
+                }
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

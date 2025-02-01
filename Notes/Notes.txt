@@ -1,0 +1,6 @@
+17-01-2025
+
+Assignment - Ecommerce Website
+Navigation bar
+Menus(When user clicks on options then it should work like add to cart)
+

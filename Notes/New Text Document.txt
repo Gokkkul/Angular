@@ -1,0 +1,6 @@
+Variable are placeholders
+variables can be reinitialized but we cannot redeclare
+in case of var we can reinitialize as well as redeclare
+Closure in JavaScript - Child can access the properities of parent once the parent has completed execution
+lexical scope - parent scopte
+closure is a function that remembers the variables from it out scopte even after that scope has expired

@@ -1,0 +1,8 @@
+<!-- <p>product-list works!</p> -->
+
+<div class="conatiner">
+    <ul>
+       <li *ngFor="let product of service.products" style="list-style-type: none;">{{ product.name }} - {{ product.price }}  <button onclick="addProduct()">Add To Cart</button></li> 
+    </ul>
+</div>
+

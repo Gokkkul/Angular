@@ -1,0 +1,156 @@
+Angular     Date - 27-01-2002
+
+- Framework
+- Single Page Application
+
+Every component has four files
+- app.component.ts
+- app.component.spec.ts (Testing file)
+- app.component.html(Template)
+- app.component.css (CSS file)
+
+
+
+To run angular file - ng serve
+
+
+To crate a login component in angular - ng g c login
+
+To change the port number - ng serve --port=4300
+
+
+Variables can be called using - {{ variable_name }}
+
+
+component - Building block of website...
+Servies - To write business logic...
+
+To generate a service - ng g s service_name
+
+
+
+------------------------------------------------------------------
+
+
+Date = 28-01-2025
+
+
+
+Component and Template
+
+Component - Building block
+Template - html
+
+
+Component Lifecycle Hooks
+
+ngOnInit - Fetch initial data
+ngOnChanges
+ngOnDestroy
+
+
+Directive
+
+To create a directive - ng g d directive_name
+Use @directive with selector parameter 
+
+Structural Directive - ngIf, ngFor, and ngSwitch
+
+Attribute Directive - ngClass, ngStyle
+
+Component Directive - Creating our own directive
+
+
+use * before Directive.
+
+
+
+ngIf
+ngFor
+ngSwitch
+
+
+Templates and Data Binding 
+
+- Interpolation : {{}}
+- Property Binding : [] eg = <img [src] = "imgUrl">
+
+
+Event Binding - (event) = "method" : created in component
+eg : <button (click)=onClick>
+
+
+Two Way Binding
+- Changes in UI will effect the ts file and the changes made in ts file will effect the UI
+
+- ngModel is used for two way Binding [(ngModel)]
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+Date - 29-01-2024
+
+@NgModule is used declare class as NgModule
+param
+
+
+
+ng g m order -m app : This command is used to create a module and update the module to app.module 
+
+
+
+
+@input and @output - Used to communicate between the components
+
+
+@input() - from the parent to child component
+
+@output() - from the child to parent component
+
+
+both the decorators are used in child
+
+requirements - import{input output EventEmitter}
+
+
+
+Types of Modules in Angular
+
+1. Root Module(App Module)
+2. Feature Modules
+3. Shared Module
+4. Lazy-leaded Modules
+5. Core Module
+
+
+
+Hierarchical Dependency Injection (HDI) in Angular
+
+Root
+component
+Module
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+Date - 30-01-2024
+
+Generic component in Angular
+
+Dynamic Component
+
+
+--------------------------------------------------------------------------------------------------------
+
+Date - 31-01-2025
+
+Routing in Angular
+
+Routing with parameters
+Routing with 

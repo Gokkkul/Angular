@@ -1,0 +1,6 @@
+<!-- <app-login />
+<app-profile />
+<app-registration /> -->
+
+<app-child [childData]="parentData" (dataEmitter)="receiveData($event)"></app-child>
+<p>{{ receivedData }}</p>

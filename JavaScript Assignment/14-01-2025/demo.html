@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test(){
+            let message = "Testing...";
+            return{
+                one : function(){
+                    console.log("Testing in one...");
+                },
+                two : function(){
+                    console.log("Testing in two...");
+                },
+                three : function(){
+                    console.log("Testing in three...");
+                }
+            }
+        }
+
+        const t = test();
+        t.one();
+        t.two();
+        t.three();
+    </script>
+</body>
+</html>

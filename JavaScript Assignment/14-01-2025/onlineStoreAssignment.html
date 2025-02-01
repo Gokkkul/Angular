@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+</head>
+<body>
+    <!-- <h2 style="text-align: center;">Discount Calculator</h2>
+    <label for="price">Enter product price - </label>
+    <input type="text" id="price">
+    <input type="button" onclick="calculate()" value="Calculate"> -->
+    <script>
+        
+        //     let choice = parseInt(prompt("Select the discount type...\n1. Adjustable Discount\n2. Fixed Discount"))
+        //     switch (choice)
+        // {
+        //         case 1:(function() {
+        //             productPrice = parseFloat(prompt("Enter Product Price : "));
+        //             discount = parseFloat(prompt("Enter discount percentage : "));
+        //             let finalPrice = productPrice - (productPrice*(discount/100));
+        //             console.log("Product price : " + productPrice + "\nDiscount : " + discount + "\nFinal Price : " + finalPrice)
+        //         })();
+                    
+        //             break;
+        //         case 2:(function() {
+        //             productPrice = parseFloat(prompt("Enter Product Price : "));
+        //             discount = 10;
+        //             let finalPrice = productPrice - (productPrice*(discount/100));
+        //             console.log("Product price : " + productPrice + "\nDiscount : " + discount + "\nFinal Price : " + finalPrice)
+        //         })();
+
+        //             break;
+        //         default:
+        //             break;
+        //     }
+
+            
+            function discount()
+        {
+            return{
+                ajustableDiscount :(function() {
+                    productPrice = parseFloat(prompt("Enter Product Price : "));
+                    discount = parseFloat(prompt("Enter discount percentage : "));
+                    let finalPrice = productPrice - (productPrice*(discount/100));
+                    console.log("Product price : " + productPrice + "\nDiscount : " + discount + "\nFinal Price : " + finalPrice)
+                })(),
+                    
+                    
+                fixedDiscount :(function() {
+                    productPrice = parseFloat(prompt("Enter Product Price : "));
+                    discount = 10;
+                    let finalPrice = productPrice - (productPrice*(discount/100));
+                    console.log("Product price : " + productPrice + "\nDiscount : " + discount + "\nFinal Price : " + finalPrice)
+                })()
+            }
+                
+
+                  
+                
+        }
+        let choice = parseInt(prompt("Select the discount type...\n1. Adjustable Discount\n2. Fixed Discount"))
+        let d = discount()
+        switch (choice) {
+            case 1:
+                d.ajustableDiscount()
+                break;
+            case 2:
+                d.fixedDiscount()
+                break;
+        
+            default:
+                break;
+        }
+    
+        
+        // switch (key) {
+        //     case value:
+                
+        //         break;
+        
+        //     default:
+        //         break;
+        // }
+    </script>
+</body>
+</html>

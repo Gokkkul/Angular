@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.task-item {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.task-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.task-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.task-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.app-task-actions {
+    margin-top: 10px;
+}
+
+.app-task-actions button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.app-task-actions button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.app-task-actions button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}

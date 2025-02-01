@@ -1,0 +1,21 @@
+.parallax {
+    background-image: url('../aserts/parallex.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-light {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* @media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} */

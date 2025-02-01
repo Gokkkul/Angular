@@ -1,0 +1,10 @@
+IIFE
+(function(){
+    // Code here executes immediately
+    console.log("IIFE is executed!");
+})();
+
+
+Arrow functions
+Rest Parameters
+

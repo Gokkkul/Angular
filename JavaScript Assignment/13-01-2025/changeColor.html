@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <button onclick="changeColorToRed()" id="btn">Red</button><br>
+        <button onclick="changeColorToGreen()" id="btn">Green</button><br>
+        <button onclick="changeColorToBlue()" id="btn">Blue</button><br>
+        <button onclick="resetColor()" id="btn">Reset</button><br>
+        </div>
+    
+    <script>
+ 
+        // function changeColorToRed(){
+        //     document.body.style.backgroundColor = "red";
+        // }
+        // function changeColorToGreen(){
+        //     document.body.style.backgroundColor = "green";
+        // }
+        // function changeColorToBlue(){
+        //     document.body.style.backgroundColor = "blue";
+        // }
+        // function resetColor(){
+        //     document.body.style.backgroundColor = "white";
+        // }
+
+        function changeColor(){
+            let value = document.getElementById('btn').innerHTML
+            if(value === "red"){
+                document.body.style.backgroundColor = "red";
+            }
+            if(value === "green"){
+                document.body.style.backgroundColor = "green";
+            }
+            if(value === "blue"){
+                document.body.style.backgroundColor = "blue";
+            }
+            if(value === "reset"){
+                document.body.style.backgroundColor = "white";
+            }
+
+        }
+    </script>
+</body>
+</html>

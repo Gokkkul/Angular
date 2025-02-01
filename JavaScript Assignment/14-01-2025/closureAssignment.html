@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function createAccount(initialAmount) {
+            let balance = initialAmount;
+
+            return {
+                withdraw: function (amount) {
+                    if (balance < amount) {
+                        console.log("Insufficient Balance...")
+                    }
+                    else{
+                        balance = balance - amount;
+                        console.log(`${amount} is debited`);
+                    }
+                    
+                },
+                deposit: function (amount) {
+                    balance = balance + amount;
+                    console.log(`${amount} is credited`);
+                },
+                getBalance: function () {
+                    console.log("Available Balance is " + balance);
+                }
+            };
+        }
+
+        const bank = createAccount(6000);
+        bank.withdraw(2000);
+        bank.deposit(2000)
+        bank.getBalance(); 
+        
+
+
+        // function createAccount(initialAmout)
+        //     let balance = initialAmout;
+
+        //     return {function withdraw(amount) {
+        //         balance = balance - amount;
+        //         console.log("${amount} is debited")
+        //     }
+        //     function deposite(amount) {
+        //         balance = balance + amount;
+        //         console.log("${amount} is credited")
+
+        //     }
+        //     function getBalance() {
+        //         console.log("Available Balance is "+ balance);
+        //     }
+        // }
+
+        // const bank = createAccount(6000);
+        // bank.withdraw(2000);
+        // // obj.deposite(2000);
+        // // obj.getBalance();
+    </script>
+</body>
+
+</html>

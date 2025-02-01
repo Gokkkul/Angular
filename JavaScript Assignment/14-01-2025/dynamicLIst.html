@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul id="dynamicList">
+        </ul>
+    </div>
+    <input type="text" id="name" placeholder="Enter item name"> 
+    <input type="button" value="Add Item" id="addItem">
+    <input type="button" value="Remove Last Item" id="removeLastItem">
+    <input type="button" value="Clear List" id="clearList">
+
+    <script>
+        document.getElementById("addItem").addEventListener("click", addItem);
+        document.getElementById("removeLastItem").addEventListener("click", removeLastItem);
+        document.getElementById("clearList").addEventListener("click", clearList);
+
+        function addItem() { 
+            var input = document.getElementById("name").value; 
+            if(input.trim() !== "") {
+                var li = document.createElement("li"); 
+                li.innerHTML = input;
+                document.getElementById("dynamicList").appendChild(li); 
+                document.getElementById("name").value = "";
+            } else {
+                alert("Please enter an item.");
+            }
+        }
+
+        function removeLastItem() {
+            var list = document.getElementById("dynamicList");
+            if(list.children.length > 0) {
+                list.removeChild(list.lastChild);
+            } else {
+                alert("No items to remove.");
+            }
+        }
+
+        function clearList() {
+            var list = document.getElementById("dynamicList");
+            list.innerHTML = "";
+        }
+    </script>
+</body>
+</html>

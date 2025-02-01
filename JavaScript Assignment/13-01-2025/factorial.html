@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<label for="num">Enter the number - </label>
+<input type="number" id="num">
+
+<p id="result"></p>
+
+<input type="button" value="Calculate" onclick="factorial()">
+
+<body>
+    <script>
+        function factorial() {
+            let fact = 1;
+            let n = parseInt(document.getElementById('num').value);
+            for (let i = 2; i <= n; i++) {
+                fact = fact * i;
+            }
+            document.getElementById('result').innerHTML = fact;
+        }
+
+    </script>
+</body>
+</html>

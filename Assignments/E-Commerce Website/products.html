@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Electronics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body {
+    display: flex;
+}
+
+.sidenav {
+    width: 200px;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 10px;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container {
+    flex: 1;
+    padding-left: 220px; /* Adjust based on the width of sidenav */
+}
+
+    </style> -->
+</head>
+
+<body>
+    <ul class="topnav">
+        <a href="#" style="text-decoration: none;"><img src="/Asserts/Img/Apple Logo.png" alt="" width="25px"></a>
+        <div class="topnav-right">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/products.html" class="active nav-link">Products</a>
+            <a href="/aboutUs.html" class="nav-link">About Us</a>
+            <a href="/contactUs.html" class="nav-link">Contact Us</a>
+            <a href="/cart.html" class="nav-link">Cart</a>
+        </div>
+    </ul>
+
+    <!-- <div class="sidenav">
+            <h3>Filters</h3>
+            <div class="filter-section">
+                <h4>Categories</h4>
+                <label><input type="checkbox" class="category-filter" value="mobile"> Mobile</label>
+                <label><input type="checkbox" class="category-filter" value="laptop"> Laptop</label>
+                <label><input type="checkbox" class="category-filter" value="headphones"> Headphones</label>
+            </div>
+            <div class="filter-section">
+                <h4>Price</h4>
+                <label><input type="radio" name="price-filter" class="price-filter" value="0-50000"> Up to 50,000</label>
+                <label><input type="radio" name="price-filter" class="price-filter" value="50001-100000"> 50,001 - 1,00,000</label>
+                <label><input type="radio" name="price-filter" class="price-filter" value="100001-150000"> 1,00,001 - 1,50,000</label>
+            </div>
+        </div> -->
+
+    <div class="container">
+
+        <!-- Mobile -->
+        <div class="product-category">
+            <div class="product-container">
+                <h2 class="category-title">Mobiles</h2>
+                <center>
+                    <hr style="width: 80%;">
+                </center><br>
+                <div class="products">
+                    <div class="card">
+                        <a href="/product/index.html"><img class="product-img" src="/Asserts/Product Images/Iphone.jpg"
+                                alt="Iphone 16" style="width:100%"></a>
+                        <div class="container product" data-id="1" data-name="iphone16" data-price="79999">
+                            <h4 class="product-title"><b>Iphone 16</b></h4>
+                            <p class="product-price"><b>Price - 89,999/-</b> </p>
+                            <div class="btn-container">
+                                <!-- <button style="background-color: #041dff;border-radius: 5px;" class="btn">Buy Now</button> -->
+                                <button class="btn add-to-cart">Add to cart</button>
+                            </div>
+                            <p class="product-desc">
+                                The iPhone 16 features a 6.1-inch Super Retina XDR OLED display, Apple A18 Bionic chip,
+                                8GB RAM, and storage options of 128GB, 256GB, and 512GB. It has a dual-camera system
+                                with 48 MP and 12 MP lenses, a 12 MP front camera, and a 3561 mAh battery supporting
+                                fast and wireless charging. It runs on iOS 18 and comes in several colors, including
+                                Black, White, Pink, Teal, and Ultramarine.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Laptops -->
+        <div class="product-container">
+            <h2 class="category-title">Laptops</h2>
+            <center>
+                <hr style="width: 80%;">
+            </center><br>
+            <div class="products">
+                <div class="card">
+                    <img class="product-img" src="/Asserts/Product Images/Macbook.jpg" alt="Iphone 16"
+                        style="width:100%">
+                    <div class="container product" data-id="2" data-name="macbook" data-price="90000">
+                        <h4 class="product-title"><b>Macbook</b></h4>
+                        <p class="product-price"><b>Price - 90,000/-</b> </p>
+                        <div class="btn-container">
+                            <!-- <button style="background-color: #041dff;border-radius: 5px;" class="btn">Buy Now</button> -->
+                            <button class="btn add-to-cart">Add to cart</button>
+                        </div>
+                        <p class="product-desc">
+
+                            The MacBook features a M2 chip, 8-core CPU, 8GB RAM, 256GB SSD storage, 13.6-inch Retina
+                            display, and up to 18 hours of battery life. It also supports fast charging and comes in
+                            colors like Silver and Space Grey.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Headphones -->
+        <div class="product-container">
+            <h2 class="category-title">Headphones</h2>
+            <center>
+                <hr style="width: 80%;">
+            </center><br>
+            <div class="products">
+                <div class="card">
+                    <img class="product-img" src="/Asserts/Product Images/AirpodsMax.jpg" alt="Iphone 16"
+                        style="width:100%">
+                    <div class="container product" data-id="3" data-name="airpodsmax" data-price="60000">
+                        <h4 class="product-title"><b>AirPods Max</b></h4>
+                        <p class="product-price"><b>Price - 60,000/-</b> </p>
+                        <div class="btn-container">
+                            <!-- <button style="background-color: #041dff;border-radius: 5px;" class="btn">Buy Now</button> -->
+                            <button class="btn add-to-cart">Add to cart</button>
+                        </div>
+                        <p class="product-desc">
+                            The MacBook features a M2 chip, 8-core CPU, 8GB RAM, 256GB SSD storage, 13.6-inch Retina
+                            display, and up to 18 hours of battery life. It also supports fast charging and comes in
+                            colors like Silver and Space Grey.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

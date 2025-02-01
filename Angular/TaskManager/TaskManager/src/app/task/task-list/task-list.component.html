@@ -1,0 +1,12 @@
+<!-- <p>task-list works!</p> -->
+ <div class="task-list">
+    <div *ngFor="let task of tasks">
+        <app-task-item
+        [task]="task"
+        (updateStatus)="updateTaskStatus(task.id,$event)"
+        (deleteTask)="deleteTask(task.id)">
+    </app-task-item>
+
+    </div>
+ </div>
+<button (click)="addTask('New Task','Medium')">Add Task</button>

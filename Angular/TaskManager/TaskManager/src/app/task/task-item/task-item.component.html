@@ -1,0 +1,12 @@
+<!-- <p>task-item works!</p> -->
+
+<div class="task-item">
+    <h3>{{ task.name }} (Priority: {{ task.priority }})</h3>
+    <p>Status: {{ task.status }}</p>
+
+    <app-task-actions
+    [task]="task"
+    (updateStatus)="changeStatus($event)"
+    (deleteTask)="removeTask()">
+</app-task-actions><br><br>
+</div>

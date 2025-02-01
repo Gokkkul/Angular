@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Enter your name - </label>
+    <input type="text" name="" id="name"><br><br>
+    <label for="age">Enter your age - </label>
+    <input type="number" name="" id="age"><br><br>
+
+    <button onclick="submit()"> Submit</button>
+
+    <script>
+
+        function submit(){
+        let name = document.getElementById('name').value;
+        let age = parseInt(document.getElementById('age').value);
+
+        alert("Hello " + name + ". You are "+ age + " years old."
+        )
+    }
+    </script>
+</body>
+</html>

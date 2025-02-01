@@ -1,0 +1,12 @@
+1. Inline styles
+2. ID selectors
+3. Classes attributes, and pseudo-classes
+4. Element selectors and pseudo-elements
+5. Universal selector
+
+Specificity calculation
+
+Inline styles: 1000
+ID selectors: 0100
+Class, pseudo-class, or attribute selectors: 0010
+Element selectors or pseudo-element

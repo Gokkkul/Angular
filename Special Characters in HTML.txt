@@ -1,0 +1,10 @@
+&nbsp - non-breaking space
+&copy - copyright symbol
+&reg - registered trademark symbol
+&trade - trademark symbol
+&amp - ampersand
+&lt - less than sign
+&gt - greater than sign
+&quot - quotation mark
+&#X - hexadecimal character code
+&# - decimal character code
