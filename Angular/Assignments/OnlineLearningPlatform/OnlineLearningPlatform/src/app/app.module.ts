@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { CoursesModule } from './courses/courses.module';
 import { ProfileModule } from './profile/profile.module';
-import { CourseListComponent } from './course-list/course-list.component';
 
 
 
@@ -14,7 +13,7 @@ import { CourseListComponent } from './course-list/course-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CourseListComponent
+
   ],
   imports: [
     BrowserModule,
