@@ -154,3 +154,18 @@ Routing in Angular
 
 Routing with parameters
 Routing with 
+
+---------------------------------------------------------------------------------------------------------
+
+Date - 03-02-2025
+
+Route Guards in Angular
+
+1. CanActivate
+2. CanActivateChild
+3. CanDeactivate
+4. Resolve
+5. CanLoad(deprecated)
+
+
+ng g g guard_name

@@ -1,14 +1,14 @@
 <!-- <p>Course List</p> -->
 <div class="container">
     <div class="row">
-      <div class="col-md-4" *ngFor="let course of courses">
+      <div class="col-md-4 mt-3" *ngFor="let course of courses">
         <div class="card" style="width: 18rem;">
           <img [src]="'assets/images/' + course.img" class="card-img-top" alt="{{ course.name }}">
           <div class="card-body">
             <h5 class="card-title">{{ course.name }}</h5>
             <b><p>Price - {{ course.price }}</p></b>
             <p class="card-text">{{ course.description }}</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
+            <a routerLink="{{ course.id }}" class="btn btn-primary">Buy Now</a> 
           </div>
         </div>
       </div>
