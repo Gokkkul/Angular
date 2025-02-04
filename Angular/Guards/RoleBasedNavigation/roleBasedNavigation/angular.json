@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "RouteGuard": {
+    "roleBasedNavigation": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/route-guard",
+            "outputPath": "dist/role-based-navigation",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -37,12 +37,9 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
-            "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -72,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "RouteGuard:build:production"
+              "buildTarget": "roleBasedNavigation:build:production"
             },
             "development": {
-              "buildTarget": "RouteGuard:build:development"
+              "buildTarget": "roleBasedNavigation:build:development"
             }
           },
           "defaultConfiguration": "development"

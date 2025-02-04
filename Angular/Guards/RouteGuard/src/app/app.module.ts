@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SettingsComponent } from './dashboard/settings/settings.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { FormComponent } from './form/form.component';
+import { UsersModule } from './users/users.module';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,12 @@ import { FormComponent } from './form/form.component';
     DashboardComponent,
     SettingsComponent,
     ProfileComponent,
-    FormComponent
+    FormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,7 +13,4 @@ export class FormComponent {
 
   constructor(private route: ActivatedRoute){}
 
-  ngOnInit(){
-    this.route.data.subscribe(data =>)
-  }
 }

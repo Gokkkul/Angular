@@ -1,0 +1,19 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+
+
+  <label>Name</label>
+  <input type="text" formControlName="name"><br>
+
+  <label>email</label>
+  <input type="email" formControlName="email"><br>
+
+  <label>Phone</label>
+  <!-- <div *ngFor="let phone of phones.controls; let i = index" ></div> -->
+
+  <button type="submit">Submit</button>
+
+  <br>
+  <div>
+    {{ userForm }}
+  </div>
+</form>
