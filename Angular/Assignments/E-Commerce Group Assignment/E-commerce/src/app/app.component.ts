@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from './auth.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,5 @@ import { AuthService } from './auth.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  // title = 'roleBasedNavigation';
-
-
+  title = 'E-commerce';
 }

@@ -12,7 +12,7 @@ export class AuthService {
    localStorage.setItem('logggedInAs', 'Admin');
    this.router.navigate(['']);
   }
-  maangerLogin(){
+  managerLogin(){
    localStorage.setItem('logggedInAs', 'Manager')
    this.router.navigate(['']);
   }
