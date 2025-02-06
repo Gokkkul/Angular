@@ -19,8 +19,5 @@ export class RegisterComponent {
   onSubmit(){
     console.log("Form submitted Successfully");
     console.log(this.registerForm);
-    
-    
-    
   }
 }

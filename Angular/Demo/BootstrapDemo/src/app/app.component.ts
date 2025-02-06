@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'BootstrapDemo';
+  // title = 'BootstrapDemo';
+
+  card_number = "1234567898765432"
+
 }

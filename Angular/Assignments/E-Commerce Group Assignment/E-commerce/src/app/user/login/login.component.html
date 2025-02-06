@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="container">
+
+    <h3 class="heading text-center">Login</h3>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+  
+          <!-- <div class="form-group m-3">
+              <input type="text" name="name" id="name" formControlName="fullName" placeholder="Enter Full Name" class="form-control">
+            </div> -->
+          
+            <div class="form-group m-3">
+              <input type="email" name="email" id="email" formControlName="email" placeholder="Enter email" class="form-control"> 
+            </div>
+            
+            <div class="form-group m-3">
+              <input type="password" name="password" id="password" formControlName="password" placeholder="Enter Password" class="form-control">
+            </div>
+      
+            <div class="col text-center">
+              <input type="submit" class="btn btn-primary btn-block" value="Login">
+            </div><br>
+
+            <div class="col text-center">
+                <p>Not Registered? Click here to <a class="link-primary" routerLink="/user/register">Register</a> </p>
+              </div>
+      
+      </form>
+  </div>
+
+  <router-outlet></router-outlet>

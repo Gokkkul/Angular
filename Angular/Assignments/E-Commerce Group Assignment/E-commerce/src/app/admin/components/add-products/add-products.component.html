@@ -1,0 +1,31 @@
+<div class="container">
+
+    <h3 class="heading text-center">Add Product</h3>
+      <form [formGroup]="addProductsForm" (ngSubmit)="onSubmit(addProductsForm)">
+  
+          <div class="form-group m-3">
+              <input type="text" name="produt_id" id="product_id" formControlName="product_id" placeholder="Enter Product Id" class="form-control">
+            </div>
+          
+            <div class="form-group m-3">
+              <input type="text" name="product_title" id="product_title" formControlName="product_title" placeholder="Enter Product Title" class="form-control"> 
+            </div>
+            
+            <div class="form-group m-3">
+              <input type="number" name="product_price" id="product_price" formControlName="product_price" placeholder="Enter Product Price" class="form-control">
+            </div>
+            <div class="form-group m-3">
+              <input type="text" name="product_img_link" id="product_img_link" formControlName="product_img_link" placeholder="Enter Product Image Link" class="form-control">
+            </div>
+            <div class="form-group m-3">
+              <textarea name="product_description" id="product_description" placeholder="Enter Product Description" formControlName="product_description" class="form-control" rows="5"></textarea>
+            </div>
+      
+            <div class="col text-center">
+              <input type="submit" class="btn btn-primary btn-block" value="Add Product">
+            </div><br>
+      
+      </form>
+  </div>
+  
+  <router-outlet></router-outlet>

@@ -8,6 +8,8 @@ import { OrderModule } from './order/order.module';
 import { ProductModule } from './product/product.module';
 import { UserModule } from './user/user.module';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
+import { HomeModule } from './home/home.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HomeModule,
+    AdminModule,
     // AuthModule,
     // OrderModule,
     // ProductModule,
