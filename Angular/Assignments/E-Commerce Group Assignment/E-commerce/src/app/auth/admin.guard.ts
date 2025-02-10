@@ -20,19 +20,27 @@ export class AdminGuard implements CanActivate {
     state: RouterStateSnapshot
   ): boolean {
 
-    const value = localStorage.getItem('isLogged');
+    // const value = localStorage.getItem('isLogged');
 
-    if (value !== 'true') {
-      return false;
-    }
+    // if (value !== 'true') {
+    //   return false;
+    // }
 
-    const role = localStorage.getItem('role');
+    // const role = localStorage.getItem('role');
 
-    if (role === 'Admin') {
+    // if (role === 'Admin') {
+    //   return true;
+    // }
+
+    // this.router.navigate(['/login']);
+    // return false;
+
+    const user = localStorage.getItem('user');
+
+    if(user ==='Admin'){
       return true;
     }
 
-    this.router.navigate(['/login']);
-    return false;
+      return true;
   }
 }

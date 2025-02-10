@@ -187,3 +187,24 @@ ngModel
 Date 06-02-2025
 
 Pipes in Angular
+
+
+----------------------------------------------------------------------------------------------------------
+
+Date - 07-02-2025
+
+RxJs (Reactive Extension for JavaScript)
+
+Subjects
+
+Types of Subjects
+1. Basic
+2. Behavior
+3. Replayj
+4. Async
+
+
+Types of RxJs Operators
+
+1. Creation 
+
