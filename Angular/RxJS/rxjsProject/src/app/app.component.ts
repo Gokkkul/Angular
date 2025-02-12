@@ -9,10 +9,81 @@ import { map, Observable, of, range, Subject } from 'rxjs';
 })
 export class AppComponent {
   title = 'rxjsProject';
+  first_subscriber_observable!: number;
+  second_subscriber_observable!: number;
+  thrid_subscriber_observable!: number;
+  first_subscriber_subject!: number;
+  second_subscriber_subject!: number;
+  third_subscriber_subject!: number;
 
   // Subject
 
+  myObservable = new Observable(observable =>{
+      
+  })
+
   constructor(){
+
+
+    //------------------Observables are unicast-----------------
+    //observable
+    // console.log("Observable");
+    // let observable = new Observable<number>(ele =>
+    //   ele.next(Math.random()))
+
+    // //first subscriber
+    // observable.subscribe(result => {
+    //   this.first_subscriber_observable = result;
+    //   console.log(result)
+    // })
+
+    // //second subscriber
+    // observable.subscribe(result => {
+    //   this.second_subscriber_observable = result;
+    //   console.log(result)
+    // })
+
+    // //third subscriber
+    // observable.subscribe(result => {
+    //   this.thrid_subscriber_observable = result;
+    //   console.log(result)
+    // })
+    // //--------------------------------------------------------
+
+
+    // console.log("Subject");
+    
+    // //------------------Subjects are multicast-----------------
+    // //subject
+    // let subject = new Subject<number>()
+
+    // //first subscriber
+    // subject.subscribe(result => {
+    //   this.first_subscriber_subject = result;
+    //   console.log(result)
+    // })
+
+    // //second subscriber
+    // subject.subscribe(result => {
+    //   this.second_subscriber_subject = result;
+    //   console.log(result)
+    // })
+
+    // //third subscriber
+    // subject.subscribe(result => {
+    //   this.third_subscriber_subject = result;
+    //   console.log(result)
+    // })
+
+    // subject.next(Math.random())
+    //--------------------------------------------------------
+
+
+
+    
+
+
+
     // this.subject.next(1);
     // this.subject.next(2);
 
@@ -23,16 +94,18 @@ export class AppComponent {
     // this.subject.next(2);
 
 
-    of(2,4,6)
-    .pipe(map(value => value*2))
-    .subscribe(result => console.log(result)
-    )
+    // of(2,4,6)
+    // .pipe(map(value => value*2))
+    // .subscribe(result => console.log(result)
+    // )
 
     // range(1,10)
     // .subscribe(result => console.log(result));
 
     
   }
+
+  
 
 
   // subject = new Subject<number>();
@@ -151,5 +224,9 @@ export class AppComponent {
   //     // console.log('Unsubscribed from order status updates');
       
     // }
+
+
+    
+
   }
   

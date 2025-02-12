@@ -1,0 +1,7 @@
+<div class="stars">
+  <span *ngFor="let star of [1,2,3,4,5]" (click)="setRate(star)" [class.highlight]="star<=rating">*</span>
+</div>
+
+<div>
+  <h3>Rating: {{ rating }} / 5</h3>
+</div>

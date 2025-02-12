@@ -200,11 +200,32 @@ Subjects
 Types of Subjects
 1. Basic
 2. Behavior
-3. Replayj
+3. Replay
 4. Async
 
 
 Types of RxJs Operators
 
 1. Creation 
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+Date - 10-02-2025
+
+Debouncing and Throttling in RxJs
+
+
+State Management
+Types -
+1. Local State
+2. Component State
+3. Applicattion State (Global State) - Shared state across multiple components using
+                                                                1.Services with RxJs    
+                                                                2. State Management Libraries
+                                                                     NgRx
+                                                                     Akita
+                                                                     NgXS
+
 

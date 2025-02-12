@@ -1,0 +1,11 @@
+<!-- <p>cart works!</p> -->
+
+
+<h1>Cart</h1>
+<div class="container">
+    <li class="cart-list" *ngFor="let cartItem of cartItems">{{ cartItem.name }} - {{ cartItem.price }} <button class="add-to-cart" (click)="removeProduct(cartItem)">Remove from Cart</button></li>
+
+</div>
+<div class="container">
+    <button class="add-to-cart" (click)="service.clear()">Clear Cart</button>
+</div>

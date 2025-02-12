@@ -1,0 +1,9 @@
+.highlight{
+    color: gold;
+}
+
+.stars{
+    color: grey;
+    font-size: 60px;
+    cursor: pointer;
+}

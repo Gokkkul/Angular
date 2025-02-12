@@ -1,0 +1,25 @@
+<!-- <h1>Parent</h1> -->
+
+<!-- <button (click)="randomNumber()">Generate Random number</button> -->
+<!-- <app-child [item] = 'data' /> -->
+ <!-- <ul *ngFor="let user of userDetails">
+   <app-child [item]="user"/>
+ </ul> -->
+
+
+ <!-- Template Reference -->
+ <!-- <input type="text" placeholder="Enter text" [(ngModel)] = val>
+ <h2>{{ val }}</h2> -->
+ <!-- <button (click)="display(box.value)">log</button> -->
+
+
+ <h1>USD to INR Converter</h1>
+
+ <input type="number" #textBox placeholder="Enter USD Value" [(ngModel)] = usdVal>
+
+ <h4>{{ usdVal | usdInr: 80 | currency: 'INR' }}</h4>
+
+ <!-- <h3>INR value : {{ (textBox.value)| usdInr }}</h3> -->
+
+
+ 

@@ -1,0 +1,7 @@
+Things to Practice
+
+1. Dynamic Component
+2. Generics 
+
+Static Routes and Dynamic Routes
+Client side Authentication
