@@ -6,8 +6,8 @@
 
 <!-- <h3>{{ user }}</h3> -->
 
-<input *ngIf="edit === true" type="text" placeholder="Enter the username" [(ngModel)] = username>
-<input *ngIf="edit === true" type="text" placeholder="Enter the Email" [(ngModel)] = email>
+<input *ngIf="edit" type="text" placeholder="Enter the username" [(ngModel)] = username>
+<input *ngIf="edit" type="text" placeholder="Enter the Email" [(ngModel)] = email>
 
 <br><button class="btn btn-primary" (click)="editProfile(username,email)">Edit</button><br><br>
 

@@ -1,0 +1,11 @@
+<!-- <p>user-list works!</p> -->
+
+<h2>List of Users</h2>
+
+<div class="container">
+    <li *ngFor="let user of userService.userList" style="list-style: none;">
+        <a routerLink="/users/user-list/{{ user.id }}">{{user.name}}</a>
+    </li>
+</div>
+
+

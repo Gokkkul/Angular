@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project';
+
+
+  loginForm = new FormGroup({
+    username : new FormControl(''),
+    password: new FormControl('')
+  })
+
+  onSubmit(){
+    
+    console.log(this.loginForm.value);
+    
+  }
 }

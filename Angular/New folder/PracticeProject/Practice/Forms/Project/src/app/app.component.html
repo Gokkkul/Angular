@@ -1,1 +1,22 @@
-<h2>Template Driven Form</h2>
+<!-- <h2>Template Driven Form</h2>
+
+<form #loginForm = "ngForm" (ngSubmit)="onSubmit(loginForm)">
+
+    <input type="text" placeholder="Enter Username" name="username" ngModel ><br><br>
+    <input type="password" placeholder="Enter Password" name="password" ngModel><br><br>
+
+    <input type="submit" value="Login">
+
+</form>  -->
+
+
+<h2>Reactive Form</h2>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <input type="text" placeholder="Enter Username" formControlName="username"><br><br>
+    <input type="password" placeholder="Enter Password" formControlName="password"><br><br>
+
+    <input type="submit" value="Login">
+
+</form>
