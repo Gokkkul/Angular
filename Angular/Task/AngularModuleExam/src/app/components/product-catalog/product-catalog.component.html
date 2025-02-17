@@ -1,0 +1,7 @@
+<!-- <p>product-catalog works!</p> -->
+
+<div *ngFor="let product of products">
+  <app-product-item [product]="product" (productAddedToCart)="addToCart($event)">
+  </app-product-item>
+</div>
+
