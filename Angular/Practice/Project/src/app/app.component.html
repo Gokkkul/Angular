@@ -1,4 +1,12 @@
-<main>
+<!-- <main>
   <h2>Hello {{ title }}!</h2>
   <input type="text" [(ngModel)]="title" />
-</main>
+</main> -->
+
+<h3>Parent Component</h3>
+
+
+<p>{{ msgFromChild }}</p>
+<hr>
+
+<app-child [msgFromParent]="msg"></app-child>

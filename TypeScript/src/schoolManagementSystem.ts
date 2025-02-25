@@ -58,8 +58,8 @@ class Teacher extends Person {
 }
 
 abstract class Staff {
-  department: string;
-  salary: number;
+  department!: string;
+  salary!: number;
 
   abstract workDetails(): void;
 }

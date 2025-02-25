@@ -12,12 +12,14 @@ export class AuthService {
   adminLogin(){
     alert("Admin Login Successfull...!");
     localStorage.setItem('user','Admin');
+    localStorage.setItem('isLoggedIn', 'true');
     this.router.navigate(['/']);
   }
 
   userLogin(){
     alert("User Login Successfull...!");
     localStorage.setItem('user','User');
+    localStorage.setItem('isLoggedIn', 'true');
     this.router.navigate(['/']);
   }
 }
