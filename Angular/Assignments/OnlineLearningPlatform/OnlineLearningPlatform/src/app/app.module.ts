@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { CoursesModule } from './courses/courses.module';
 import { ProfileModule } from './profile/profile.module';
+import { UserModule } from './user/user.module';
+
 
 
 
@@ -20,7 +22,8 @@ import { ProfileModule } from './profile/profile.module';
     AppRoutingModule,
     HomeModule,
     CoursesModule,
-    ProfileModule
+    ProfileModule,
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
