@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, ReplaySubject } from 'rxjs';
 
 export interface course{
   id: number;
@@ -16,9 +17,13 @@ export interface course{
 
 export class CourseService {
 
-  cart: course [] = [];
+  cartList: course [] = [];
+  cart = new ReplaySubject<course[]>(1)
+  cart$ = this.cart.asObservable();
 
-  constructor() { }
+  constructor() { 
+    this.cart.next(this.cartList);
+  }
 
   courses: course[] = [
     {
@@ -44,9 +49,15 @@ export class CourseService {
     }
   ];
 
-  addToCart(item: course){
-    this.cart.push(item);
-    console.log(this.cart);
+  // addToCart(item: course){
+  //   this.cart.push(item);
+  //   console.log(this.cart);
     
+  // }
+addToCart(item: course){
+    this.cartList.push(item);
+    console.log(this.cart);
+    this.cart.next(this.cartList);
   }
+  
 }

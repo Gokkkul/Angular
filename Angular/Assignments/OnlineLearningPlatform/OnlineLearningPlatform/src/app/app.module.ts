@@ -7,6 +7,7 @@ import { HomeModule } from './home/home.module';
 import { CoursesModule } from './courses/courses.module';
 import { ProfileModule } from './profile/profile.module';
 import { UserModule } from './user/user.module';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -15,6 +16,7 @@ import { UserModule } from './user/user.module';
 @NgModule({
   declarations: [
     AppComponent,
+    CartComponent,
 
   ],
   imports: [

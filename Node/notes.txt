@@ -1,0 +1,15 @@
+Date - 03-03-2025
+
+
+Promises
+
+promise.all() - All promises will execute at the same and if one fails then others will also not execute.
+
+
+Async and Await
+
+Promise states - pending, fulfilled, rejected.
+
+use .then() to handle success and use .catch() to handle errors
+
+

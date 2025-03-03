@@ -4,12 +4,14 @@ import { CourseListComponent } from './courses/course-list/course-list.component
 import { HomeComponent } from './home/home/home.component';
 import { UserModule } from './user/user.module';
 import { ViewCourseComponent } from './courses/view-course/view-course.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path:"courses" , component: CourseListComponent},
   {path:"home" , component: HomeComponent},
+  {path:"cart" , component: CartComponent},
 
   { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule)},
   // {path:"courses/:id" , component: CourseListComponent},
