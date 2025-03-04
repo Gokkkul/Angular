@@ -13,3 +13,25 @@ Promise states - pending, fulfilled, rejected.
 use .then() to handle success and use .catch() to handle errors
 
 
+---------------------------------------------------------------------------------------------------------
+
+Date - 04-03-2025
+
+Global Object in Node.js
+
+
+Modules
+1. Core 
+2. Local
+3. Third-party-Modules
+
+
+REPL Terminal
+REPL - Read Eval Print Loop 
+
+
+Buffer
+
+Stream
+
+File system

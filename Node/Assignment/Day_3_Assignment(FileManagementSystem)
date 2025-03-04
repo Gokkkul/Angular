@@ -1,0 +1,33 @@
+const fs = require("fs");
+
+
+// Creating and Writing into the file
+fs.writeFile('example.txt', 'Hello, World!', (err) => {
+  if(err) throw err;
+  console.log('File data written successfully');
+});
+
+// Reading file data in 3 seconds
+
+console.log("Reading file in 3 seconds...");
+setTimeout( () => {
+  fs.readFile('example.txt', 'utf8', (err,data) => {
+  if(err) throw err;
+  console.log(data);
+})
+},  3000)
+
+fs.appendFile('example.txt', '\Data Appended', (err) =>{
+  if(err) throw err;
+  console.log(('Data appended'));
+})
+
+fs.unlink('example.txt', (err) => {
+  if(err) throw err;
+  console.log('File deleted successfully...');
+});
+
+
+console.log(process.pid);     
+console.log(process.version);  
+console.log(process.platform); 

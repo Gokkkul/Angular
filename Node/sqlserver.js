@@ -28,12 +28,18 @@ app.post("/data", async(req, res) =>{
         .input("cust_age", sql.Int, cust_age )
         .input("cust_city", sql.Int, cust_city )
     }
+    catch(error){
+        console.log(error);
+    }
 })
 
 app.put("/data/:id", async(req, res) =>{
     try{
         const {cust_id} = req.params;
-        const 
+    }
+    catch(error){
+        console.log(error);
+        
     }
 })
 
