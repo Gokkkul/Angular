@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, ReplaySubject } from 'rxjs';
 
-export interface course{
+export interface course {
   id: number;
   img: string;
   name: string;
@@ -10,18 +10,14 @@ export interface course{
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
-
-
 export class CourseService {
-
-  cartList: course [] = [];
-  cart = new ReplaySubject<course[]>(1)
+  cartList: course[] = [];
+  private cart = new ReplaySubject<course[]>(1);
   cart$ = this.cart.asObservable();
 
-  constructor() { 
+  constructor() {
     this.cart.next(this.cartList);
   }
 
@@ -31,33 +27,40 @@ export class CourseService {
       name: 'JavaScript Beginner to Advance',
       price: 1000,
       img: 'course1.png',
-      description: 'This course contains all the JavaScript concepts from basics to Advance'
+      description:
+        'This course contains all the JavaScript concepts from basics to Advance',
     },
     {
       id: 102,
       name: 'TypeScript Beginner to Advance',
       price: 1000,
       img: 'course2.png',
-      description: 'This course contains all the TypeScript concepts from basics to Advance'
+      description:
+        'This course contains all the TypeScript concepts from basics to Advance',
     },
     {
       id: 103,
       name: 'Angular Beginner to Advance',
       price: 1000,
       img: 'course3.png',
-      description: 'This course contains all the Angular concepts from basics to Advance'
-    }
+      description:
+        'This course contains all the Angular concepts from basics to Advance',
+    },
   ];
 
   // addToCart(item: course){
   //   this.cart.push(item);
   //   console.log(this.cart);
-    
+
   // }
-addToCart(item: course){
+  addToCart(item: course) {
     this.cartList.push(item);
     console.log(this.cart);
     this.cart.next(this.cartList);
   }
-  
+
+  removeCourse(id: number) {
+    this.cartList = this.cartList.filter((item) => item.id != id);
+    this.cart.next(this.cartList);
+  }
 }

@@ -1,1 +1,27 @@
-{{cartList | json}}
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div *ngFor="let course of cartList" class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img [src]="course.img" class="card-img" alt="{{course.name}}">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{course.name}}</h5>
+                <p class="card-text">{{course.description}}</p>
+                <p class="card-text">
+                  <small class="text-muted">Price: {{ course.price | currency: 'INR' }}</small>
+                </p>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-danger" (click)="removeCourse(course.id)">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Total Amount: {{ totalamt | currency: 'INR' }}</h3>
+  </div>
+  
